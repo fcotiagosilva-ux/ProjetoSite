@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Fluentia",
+    "slug": "fluentia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f7f8f3"
+    },
+    "android": {
+      "package": "com.fluentia.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.fluentia.app"
+    }
+  }
+}

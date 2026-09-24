@@ -1,25 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título do Site</title>
+    <meta name="description" content="Fluentia é seu tutor de inglês com IA no WhatsApp. Pratique conversação todos os dias.">
+    <title>Fluentia | Inglês no WhatsApp com IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-    <header>
-        <h1>Título do Site</h1>
-        <img src="imagems/JV.jpg" alt="">
-    </header>
-    <article>
-        <h2>Curso java</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti, a ad tempora inventore praesentium itaque! Quod ducimus at officiis aspernatur culpa consequatur recusandae temporibus earum dolores suscipit! Magni, fuga!</p>
-    </article>
-    <article>
-        <h2>Curso em video</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi libero ratione alias, asperiores optio aperiam repellendus voluptates soluta voluptas sunt dolor aspernatur tenetur quibusdam facere. Ipsa repellat esse quae at!</p>
-    </article>
-    </main>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#" aria-label="Fluentia início">
+                <span class="brand-mark">F</span>
+                <span>fluentia<span class="brand-dot">.</span></span>
+            </a>
+            <nav aria-label="Navegação principal">
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#recursos">Recursos</a>
+            </nav>
+            <a class="button button-small button-outline whatsapp-link" href="#demo">Testar agora <span aria-hidden="true">↗</span></a>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <div class="eyebrow"><span class="pulse"></span> seu tutor de inglês, sempre disponível</div>
+                    <h1>Destrave o seu inglês <em>conversando.</em></h1>
+                    <p class="hero-text">Uma IA que entende seu nível, corrige sem interromper e transforma alguns minutos no WhatsApp em evolução de verdade.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#demo">Começar a praticar <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="#como-funciona">Conhecer o método <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <div class="social-proof">
+                        <div class="avatar-stack" aria-hidden="true"><span>AM</span><span>JS</span><span>RL</span><span>+</span></div>
+                        <p><strong>+2.000 alunos</strong><br>praticando toda semana</p>
+                    </div>
+                </div>
+                <div class="hero-visual" id="demo">
+                    <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✦</div>
+                    <div class="phone">
+                        <div class="phone-top"><span class="phone-time">9:41</span><span>•••</span></div>
+                        <div class="chat-header">
+                            <div class="bot-avatar">F<span></span></div>
+                            <div><strong>Fluentia AI</strong><small><span class="online-dot"></span> online agora</small></div>
+                            <span class="chat-menu">•••</span>
+                        </div>
+                        <div class="chat-body" id="chat-body" aria-live="polite">
+                            <div class="date-divider">HOJE</div>
+                            <div class="message bot-message">Hi! 👋 Eu sou a Fluentia.<br>O que você gostaria de praticar hoje?</div>
+                            <div class="quick-options">
+                                <button data-message="Conversação do dia">Conversação do dia <span>→</span></button>
+                                <button data-message="Quero aprender palavras novas">Aprender palavras novas <span>→</span></button>
+                            </div>
+                            <div class="message user-message">I want to practice speaking.</div>
+                            <div class="message bot-message">Great choice! Vamos falar sobre sua rotina. <strong>What do you usually do in the morning?</strong></div>
+                            <div class="typing"><i></i><i></i><i></i></div>
+                        </div>
+                        <form class="chat-input" id="chat-form">
+                            <input id="chat-input" type="text" placeholder="Digite sua resposta em inglês..." aria-label="Sua resposta em inglês">
+                            <button type="submit" aria-label="Enviar mensagem">↑</button>
+                        </form>
+                    </div>
+                    <div class="floating-card"><span class="check-icon">✓</span><div><strong>Correção gentil</strong><small>Você quis dizer: <b>usually</b></small></div></div>
+                </div>
+            </section>
+
+            <section class="trust-bar" aria-label="Benefícios">
+                <span>Feito para quem quer:</span><strong>falar sem medo</strong><strong>aprender no seu ritmo</strong><strong>não esquecer o que estudou</strong>
+            </section>
+
+            <section class="features section" id="recursos">
+                <div class="section-heading"><div><span class="eyebrow">mais que tradução</span><h2>Inglês que cabe<br><em>na sua rotina.</em></h2></div><p>A Fluentia usa IA para tornar cada conversa mais natural, personalizada e útil para a sua vida real.</p></div>
+                <div class="feature-grid">
+                    <article class="feature-card card-purple"><span class="feature-number">01</span><div class="feature-icon">◌</div><h3>Conversa de verdade</h3><p>Pratique situações reais, do café da manhã à sua próxima reunião.</p><a href="#demo">Ver como funciona <span>↗</span></a></article>
+                    <article class="feature-card card-yellow"><span class="feature-number">02</span><div class="feature-icon">✧</div><h3>Correção que ensina</h3><p>Receba feedback no momento certo e entenda o porquê de cada ajuste.</p><a href="#demo">Ver como funciona <span>↗</span></a></article>
+                    <article class="feature-card card-green"><span class="feature-number">03</span><div class="feature-icon">↗</div><h3>Progresso visível</h3><p>Pequenas práticas diárias que viram confiança para falar inglês.</p><a href="#demo">Ver como funciona <span>↗</span></a></article>
+                </div>
+            </section>
+
+            <section class="steps section" id="como-funciona">
+                <div class="eyebrow">comece em 3 passos</div><h2>Seu próximo “<em>hello</em>”<br>começa aqui.</h2>
+                <div class="step-list"><div><b>01</b><strong>Escolha seu nível</strong><span>Do básico ao avançado, sem teste complicado.</span></div><div><b>02</b><strong>Converse pelo WhatsApp</strong><span>Uma mensagem por dia já faz diferença.</span></div><div><b>03</b><strong>Veja você evoluir</strong><span>Feedback claro para ganhar confiança.</span></div></div>
+                <a class="button button-dark whatsapp-link" href="#demo">Quero experimentar <span>→</span></a>
+            </section>
+        </main>
+        <footer><a class="brand" href="#"><span class="brand-mark">F</span><span>fluentia<span class="brand-dot">.</span></span></a><span>Aprenda a falar. Um dia de cada vez.</span><span>© 2024 Fluentia AI</span></footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
